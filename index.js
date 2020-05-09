@@ -91,7 +91,7 @@ for ( let i = 0; i <= num; i++){
 }
 
 return {
-    "home" : h,
+    "Home" : h,
     "Away" : a,
   };
 }
