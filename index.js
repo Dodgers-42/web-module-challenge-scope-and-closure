@@ -117,8 +117,30 @@ and returns the score at each pont in the game, like so:
 
 Final Score: 6 - 10 */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(cd,innNum) {
+ let score = {
+   "Home":0,
+   "Away":0,
+ }
+ let scorearray = [];
+ //Looks outward for score and then increases appropriate amount and returns
+ for( let i = 1; i<= innNum; i++){
+   score["Home"] += cb(0,2);
+   score["Away"] += cb(0,2);
+   if (i === 1){
+     scorearray.push (`1st: inning: ${score["Home"]} - ${score["Away"]}`);
+   }
+   else if(i === 2){
+    scorearray.push (`2nd: inning: ${score["Home"]} - ${score["Away"]}`);
+   }
+   else if(i === 3){
+    scorearray.push (`3rd: inning: ${score["Home"]} - ${score["Away"]}`);
+   }
+   else{
+    scorearray.push (`[i]th: inning: ${score["Home"]} - ${score["Away"]}`);
+   }
+ }
+ console.log(scorearray)
 }
-
+scoreboard(inning, 9);
 
