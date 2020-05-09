@@ -58,8 +58,11 @@ Write a function called `inning` that generates a random number of points that a
 
 function inning(array){
 let array = [] 
-  if (let i = 0; i < inning.lenght; i++) {
-    
+  for (let i = 0; i < inning.lenght; i++) {
+    if (){
+      p >= 0; 
+    }else
+      p =< 2;
   }
     /*Code Here*/
 
@@ -79,12 +82,20 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
-  /*Code Here*/
-
+function finalScore(cb,num){
+let h = 0;
+let a = 0;
+for ( let i = 0; i <= num; i++){
+  h =+ cb;
+  a += cb;
 }
 
+return {
+    "home" : h,
+    "Away" : a,
+  };
+}
+console.log(finalScore(inning,9));
 /* Task 4: 
 
 Create a function called `scoreboard` that accepts the following parameters: 
