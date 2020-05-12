@@ -28,8 +28,10 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  *    Just working it out, figuring it out soon....
+ * counter1 is in Function scope.. it can only effect incide the function..
+ * counter2 in the Global scope, can be used Global
  * 2. Which of the two uses a closure? How can you tell?
- * 
+ * If count needs to be used elsewhere in the global scope
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
 */
@@ -56,18 +58,12 @@ function counter2() {
 
 Write a function called `inning` that generates a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
 
-function inning(array){
-let array = [] 
-  for (let i = 0; i < inning.lenght; i++) {
-    if (){
-      p >= 0; 
-    }else
-      p =< 2;
-  }
+function inning(){
+let randomNum=Math.round(Math.random()*2);
     /*Code Here*/
 
 }
-inning(points)
+inning();
 /* Task 3: finalScore()
 
 Write a higher order function called `finalScore` that accepts the callback function `inning` (from above) and a number of innings and and returns the final score of the game in the form of an object.
