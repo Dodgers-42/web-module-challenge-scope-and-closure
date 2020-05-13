@@ -27,12 +27,14 @@ function processFirstItem(stringList, callback) {
  * Study the code for counter1 and counter2. Answer the questions below.
  * 
  * 1. What is the difference between counter1 and counter2?
- *    Just working it out, figuring it out soon....
- * counter1 is in Function scope.. it can only effect incide the function..
- * counter2 in the Global scope, can be used Global
+ *   
+ * counter1 is in Function scope.. it can only effect inside the function..
+ * counter2 in the Global scope, can be used Global (giant function)
  * 2. Which of the two uses a closure? How can you tell?
- * If count needs to be used elsewhere in the global scope
+ * They both closure, cuz they have access to elements they need to run. counter1 has varibles within its function, and counter2 needs to be used elsewhere in the global scope.
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+ * Counter1 would be best if you needed to manipulate a number several times in order to get the correct outcome: if you needed to add to the beginning number, then multiply the newly created number.
+ * Counter2 would be best if you needed your number to always start at zero when using the function.
  *
 */
 
@@ -60,9 +62,9 @@ Write a function called `inning` that generates a random number of points that a
 
 function inning(){
 let randomNum=Math.round(Math.random()*2);
-    /*Code Here*/
+  
 
-}
+};
 inning();
 /* Task 3: finalScore()
 
@@ -78,20 +80,25 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(cb,num){
-let h = 0;
-let a = 0;
-for ( let i = 0; i <= num; i++){
-  h =+ cb;
-  a += cb;
-}
+function finalScore(callback,inningNum){
+let scores={};
+
+let homeTeam = 0;
+let awayTeam = 0;
+for ( let i = 0; 1 <= num; i++){}
+
+  Home =+ callback;
+  Away += callback;
+
 
 return {
-    "Home" : h,
-    "Away" : a,
+  "Home" : home,
+  "Away" : away,
   };
-}
-console.log(finalScore(inning,9));
+    
+};
+console.log(finalScore(inning,2));
+
 /* Task 4: 
 
 Create a function called `scoreboard` that accepts the following parameters: 
